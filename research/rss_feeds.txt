@@ -1,0 +1,18 @@
+# arXiv RSS feeds for LLM agent security sweeps
+https://export.arxiv.org/rss/cs.CR
+https://export.arxiv.org/rss/cs.AI
+https://export.arxiv.org/rss/cs.CL
+https://export.arxiv.org/rss/cs.LG
+https://export.arxiv.org/rss/stat.ML
+
+# Keyword-focused Atom feeds
+# 1) LLM/Foundation models + Security/Safety/etc
+https://export.arxiv.org/api/query?search_query=%28all%3A%22large%20language%20model%22%20OR%20all%3ALLM%20OR%20all%3A%22foundation%20model%22%29%20AND%20%28all%3Asecurity%20OR%20all%3Asafety%20OR%20all%3Ajailbreak%20OR%20all%3A%22prompt%20injection%22%20OR%20all%3Aprivacy%20OR%20all%3Abackdoor%20OR%20all%3Apoisoning%20OR%20all%3Aexfiltration%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
+# 2) Prompt injection / Tool-use / Agent safety
+https://export.arxiv.org/api/query?search_query=%28all%3A%22prompt%20injection%22%20OR%20all%3A%22indirect%20prompt%20injection%22%20OR%20all%3A%22tool%20use%22%20OR%20all%3Aagent%29%20AND%20%28all%3A%22large%20language%20model%22%20OR%20all%3ALLM%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
+# 3) Jailbreak / adversarial prompts / red teaming
+https://export.arxiv.org/api/query?search_query=%28all%3Ajailbreak%20OR%20all%3A%22prompt%20attack%22%20OR%20all%3A%22adversarial%20prompt%22%20OR%20all%3A%22red%20teaming%22%29%20AND%20%28all%3A%22large%20language%20model%22%20OR%20all%3ALLM%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
+# 4) Training-stage poisoning/backdoor/data corruption
+https://export.arxiv.org/api/query?search_query=%28all%3Apoisoning%20OR%20all%3A%22data%20poisoning%22%20OR%20all%3Abackdoor%20OR%20all%3A%22trojan%22%29%20AND%20%28all%3A%22large%20language%20model%22%20OR%20all%3ALLM%20OR%20all%3A%22language%20model%22%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
+# 5) Deployment-stage privacy/membership inference/data extraction
+https://export.arxiv.org/api/query?search_query=%28all%3A%22membership%20inference%22%20OR%20all%3A%22training%20data%20extraction%22%20OR%20all%3A%22data%20exfiltration%22%20OR%20all%3Aprivacy%29%20AND%20%28all%3A%22large%20language%20model%22%20OR%20all%3ALLM%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
