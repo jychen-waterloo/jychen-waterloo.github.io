@@ -1,0 +1,84 @@
+# LeetCode Practice Pool
+
+Use this list to track Jiayi's must-practice problems. Update the table whenever a problem is attempted so we can see repetition counts, last touch dates, and current mastery confidence levels.
+
+## Mastery Scale
+- **Learning** – still figuring out the core idea or pattern.
+- **Warming Up** – can solve with light hints or after a reminder.
+- **Comfortable** – can solve independently within target time.
+- **Mastered** – fluent, can teach/explain variants.
+
+## Problem Pool
+| # | Title | Core Topic(s) | Difficulty | Attempts | Last Attempt | Mastery | Notes |
+|---|-------|----------------|------------|----------|--------------|---------|-------|
+| 1 | Two Sum | hash map, array | Easy | 1 | 2025-12-27 | Comfortable | 使用哈希表存储已遍历过的数字及其索引，遍历数组时检查目标值与当前值的差是否在哈希表中，时间复杂度O(n)。 |
+| 2 | Add Two Numbers | linked list | Medium | 1 | 2026-01-02 | Comfortable | 需要考虑进位问题。 |
+| 3 | Longest Substring Without Repeating Characters | two pointers, hash map, array, sliding window | Medium | 1 | 2025-12-29 | Warming Up | 使用bool[256]代替哈希表，双指针维护窗口。 |
+| 11 | Container With Most Water | two pointers, greedy | Medium | 1 | 2025-12-28 | Comfortable | 移动较短的边才可能增大面积。 |
+| 15 | 3Sum | two pointers, array | Medium | 1 | 2025-12-28 | Warming Up | 排序后双指针求2-sum并去重。 |
+| 19 | Remove Nth Node From End of List | two pointers, linked list | Medium | 1 | 2025-12-30 | Warming Up | 快指针先走n步后与慢指针同速前进。 |
+| 20 | Valid Parentheses | string, stack | Easy | 1 | 2026-01-03 | Comfortable | 经典栈匹配题。 |
+| 21 | Merge Two Sorted Lists | two pointers, array | Easy | 1 | 2025-12-30 | Comfortable | 哨兵节点合并并释放。 |
+| 23 | Merge k Sorted Lists | priority queue, array, linked list | Hard | 1 | 2026-01-10 | Warming Up | 用k大小最小堆维护头节点，O(k)空间。 |
+| 46 | Permutations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯，需要熟练。 |
+| 48 | Rotate Image | array | Medium | 1 | 2026-02-08 | Learning | 找规律回字形移动；或先转置再行反转。 |
+| 49 | Group Anagrams | hash map, string | Medium | 1 | 2025-12-29 | Warming Up | 按排序串或字符频率作为hash键。 |
+| 53 | Maximum Subarray | divide & conquer, dynamic programming, array | Medium | 1 | 2026-01-31 | Learning | DP压缩可得Kadane算法。 |
+| 54 | Spiral Matrix | array | Medium | 1 | 2026-02-08 | Learning | 按m*n遍历，碰壁转向。 |
+| 55 | Jump Game | greedy | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示，最远可达贪心模板熟练。 |
+| 56 | Merge Intervals | array | Medium | 1 | 2026-01-18 | Comfortable | 排序后顺序合并。 |
+| 70 | Climbing Stairs | dynamic programming | Easy | 1 | 2026-01-17 | Comfortable | 等价斐波那契。 |
+| 73 | Set Matrix Zeroes | array | Medium | 1 | 2026-02-08 | Warming Up | 用首行首列做零标记实现O(1)空间。 |
+| 76 | Minimum Window Substring | two pointers | Hard | 2 | 2026-02-16 | Learning | count可为负，允许缺口累积；今天花20 min且提示1次，重点再练左指针收缩触发条件。 |
+| 77 | Combinations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯。 |
+| 78 | Subsets | bitmap, backtracking | Medium | 1 | 2026-01-06 | Comfortable | 可用回溯或位掩码。 |
+| 88 | Merge Sorted Array | two pointers | Easy | 1 | 2025-12-27 | Warming Up | 双指针从后往前可避免额外空间。 |
+| 98 | Validate Binary Search Tree | tree, DFS | Medium | 1 | 2026-01-05 | Comfortable | 注意上下界和溢出。 |
+| 100 | Same Tree | BFS, tree | Easy | 1 | 2026-01-04 | Comfortable | DFS递归比较左右子树。 |
+| 102 | Binary Tree Level Order Traversal | tree, DFS | Medium | 1 | 2026-01-04 | Warming Up | 用队列层序遍历。 |
+| 104 | Maximum Depth of Binary Tree | tree | Easy | 1 | 2026-01-04 | Comfortable | 经典递归。 |
+| 121 | Best Time to Buy and Sell Stock | two pointers | Easy | 1 | 2026-02-01 | Comfortable | 维护最低买价与后续卖价。 |
+| 125 | Valid Palindrome | two pointers, string | Easy | 1 | 2026-02-01 | Comfortable | 字母数字都要考虑。 |
+| 128 | Longest Consecutive Sequence | Union-Find, array | Medium | 1 | 2026-01-17 | Learning | 用unordered_set找序列头确保O(n)。 |
+| 133 | Clone Graph | hash map, DFS | Medium | 1 | 2026-01-11 | Comfortable | DFS+哈希表缓存节点。 |
+| 141 | Linked List Cycle | two pointers, linked list | Easy | 1 | 2025-12-30 | Comfortable | Floyd判环。 |
+| 143 | Reorder List | two pointers, linked list | Medium | 1 | 2026-01-02 | Warming Up | 快慢指针找中点，反转后交替合并。 |
+| 155 | Min Stack | stack | Medium | 1 | 2026-01-03 | Warming Up | 双栈跟踪最小值。 |
+| 160 | Intersection of Two Linked Lists | two pointers, linked list | Easy | 1 | 2026-01-02 | Comfortable | 双指针遍历两次相遇。 |
+| 169 | Majority Element | array | Easy | 1 | 2026-02-01 | Comfortable | Boyer-Moore投票法。 |
+| 189 | Rotate Array | two pointers, array | Medium | 1 | 2026-02-02 | Learning | 反转三次即可原地旋转。 |
+| 198 | House Robber | dynamic programming | Medium | 1 | 2026-01-17 | Learning | 只需保存rob/skip状态。 |
+| 200 | Number of Islands | DFS | Medium | 1 | 2026-01-11 | Comfortable | DFS染色统计岛屿。 |
+| 206 | Reverse Linked List | linked list | Easy | 1 | 2025-12-30 | Comfortable | 迭代反转指针。 |
+| 207 | Course Schedule | BFS, DFS | Medium | 1 | 2026-01-17 | Warming Up | Kahn算法：入度数组+队列。 |
+| 209 | Minimum Size Subarray Sum | two pointers, array, sliding window | Medium | 1 | 2026-02-11 | Learning | 左指针收缩时更新答案；也可前缀和+二分。 |
+| 215 | Kth Largest Element in an Array | QuickSelect, priority queue, divide & conquer, array | Medium | 1 | 2026-01-10 | Warming Up | 最小堆或QuickSelect。 |
+| 217 | Contains Duplicate | hash map, array | Easy | 1 | 2025-12-27 | Comfortable | 用unordered_set检测重复。 |
+| 226 | Invert Binary Tree | tree | Easy | 1 | 2026-01-04 | Comfortable | 递归交换左右子树。 |
+| 230 | Kth Smallest Element in a BST | inorder traversal, tree | Medium | 1 | 2026-01-05 | Warming Up | 迭代中序遍历。 |
+| 235 | Lowest Common Ancestor of a BST | BST | Easy | 1 | 2026-01-05 | Comfortable | 利用BST大小关系定位。 |
+| 238 | Product of Array Except Self | prefix product, array | Medium | 1 | 2025-12-28 | Warming Up | 左前缀乘*右前缀乘。 |
+| 242 | Valid Anagram | hash map, string | Easy | 1 | 2025-12-27 | Comfortable | 统计字符频率。 |
+| 283 | Move Zeroes | two pointers, array | Easy | 1 | 2026-02-02 | Learning | 把非零元素往前推，类似逆向思路。 |
+| 300 | Longest Increasing Subsequence | dynamic programming | Medium | 2 | 2026-02-17 | Warming Up | 9 min，依赖记忆的 patience / lower_bound 模板完成；需要再理解为何 dp 保存的是“长度k的最小尾值”。 |
+| 322 | Coin Change | dynamic programming | Medium | 1 | 2026-01-18 | Warming Up | 经典dp：dp[amount]。 |
+| 347 | Top K Frequent Elements | priority queue, hash map, array | Medium | 1 | 2026-01-10 | Warming Up | 频率统计+最小堆或桶排序。 |
+| 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
+| 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
+| 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
+| 560 | Subarray Sum Equals K | prefix sum | Medium | 1 | 2026-02-05 | Learning | sum[j]-sum[i]=k，配合哈希表计数。 |
+| 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
+| 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
+| 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
+| 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
+| 2402 | Meeting Rooms III | priority queue, greedy | Hard | 1 | 2025-12-27 | Warming Up | 两个最小堆跟踪空房与占用房。 |
+
+## Next Additions
+- Mirror any new Notion entries here as soon as they are marked「重点学习」or「初次学习」so the schedule stays synced.
+- Add classic problems per topic focus (e.g., binary search, tree traversals) once they appear in regular rotations.
+- When a new problem becomes "must review", append it with Attempts=0 and Mastery=Learning, then update after each session.
+
+## Update Process
+1. Log each session in `leetcode/ledger.jsonl` as usual.
+2. Mirror must-review problems here with cumulative attempt counts.
+3. Revisit problems tagged "Learning/Warming Up" within 3–5 days.
