@@ -29,7 +29,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 56 | Merge Intervals | array | Medium | 1 | 2026-01-18 | Comfortable | 排序后顺序合并。 |
 | 70 | Climbing Stairs | dynamic programming | Easy | 1 | 2026-01-17 | Comfortable | 等价斐波那契。 |
 | 73 | Set Matrix Zeroes | array | Medium | 1 | 2026-02-08 | Warming Up | 用首行首列做零标记实现O(1)空间。 |
-| 76 | Minimum Window Substring | two pointers | Hard | 2 | 2026-02-16 | Learning | count可为负，允许缺口累积；今天花20 min且提示1次，重点再练左指针收缩触发条件。 |
+| 76 | Minimum Window Substring | two pointers | Hard | 3 | 2026-02-18 | Learning | count可为负，允许缺口累积；今天花5 min无提示，重点再练左指针收缩触发条件。 |
 | 77 | Combinations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯。 |
 | 78 | Subsets | bitmap, backtracking | Medium | 1 | 2026-01-06 | Comfortable | 可用回溯或位掩码。 |
 | 88 | Merge Sorted Array | two pointers | Easy | 1 | 2025-12-27 | Warming Up | 双指针从后往前可避免额外空间。 |
@@ -63,10 +63,11 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 300 | Longest Increasing Subsequence | dynamic programming | Medium | 2 | 2026-02-17 | Warming Up | 9 min，依赖记忆的 patience / lower_bound 模板完成；需要再理解为何 dp 保存的是“长度k的最小尾值”。 |
 | 322 | Coin Change | dynamic programming | Medium | 1 | 2026-01-18 | Warming Up | 经典dp：dp[amount]。 |
 | 347 | Top K Frequent Elements | priority queue, hash map, array | Medium | 1 | 2026-01-10 | Warming Up | 频率统计+最小堆或桶排序。 |
+| 416 | Partition Equal Subset Sum | dynamic programming | Medium | 1 | 2026-02-18 | Learning | 首次做依赖提示才想到0/1背包，需要多做几次熟悉倒序更新的理由。 |
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
-| 560 | Subarray Sum Equals K | prefix sum | Medium | 1 | 2026-02-05 | Learning | sum[j]-sum[i]=k，配合哈希表计数。 |
+| 560 | Subarray Sum Equals K | prefix sum | Medium | 2 | 2026-02-18 | Learning | sum[j]-sum[i]=k，配合哈希表计数；查 count(prefix-k) 后再更新当前前缀，之后 2 天内再复习一次。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
