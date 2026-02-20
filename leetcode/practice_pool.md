@@ -20,7 +20,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 20 | Valid Parentheses | string, stack | Easy | 1 | 2026-01-03 | Comfortable | 经典栈匹配题。 |
 | 21 | Merge Two Sorted Lists | two pointers, array | Easy | 1 | 2025-12-30 | Comfortable | 哨兵节点合并并释放。 |
 | 23 | Merge k Sorted Lists | priority queue, array, linked list | Hard | 1 | 2026-01-10 | Warming Up | 用k大小最小堆维护头节点，O(k)空间。 |
-| 33 | Search in Rotated Sorted Array | binary search | Medium | 1 | 2026-02-19 | Learning | 首次做用时18分钟并提交5次，卡在边界条件（st≤ed、mid±1）；需整理模板。 |
+| 33 | Search in Rotated Sorted Array | binary search | Medium | 2 | 2026-02-20 | Learning | 先卡在条件分支，今天复习模板后独立 AC，但提交仍多次；需要多刷强化判断顺序。 |
 | 46 | Permutations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯，需要熟练。 |
 | 48 | Rotate Image | array | Medium | 2 | 2026-02-19 | Warming Up | 本轮11分钟无提示完成，按分层四元旋转；可再熟练直接转置+反转写法。 |
 | 49 | Group Anagrams | hash map, string | Medium | 1 | 2025-12-29 | Warming Up | 按排序串或字符频率作为hash键。 |
@@ -36,7 +36,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 88 | Merge Sorted Array | two pointers | Easy | 1 | 2025-12-27 | Warming Up | 双指针从后往前可避免额外空间。 |
 | 98 | Validate Binary Search Tree | tree, DFS | Medium | 1 | 2026-01-05 | Comfortable | 注意上下界和溢出。 |
 | 100 | Same Tree | BFS, tree | Easy | 1 | 2026-01-04 | Comfortable | DFS递归比较左右子树。 |
-| 102 | Binary Tree Level Order Traversal | tree, DFS | Medium | 1 | 2026-01-04 | Warming Up | 用队列层序遍历。 |
+| 102 | Binary Tree Level Order Traversal | tree, DFS | Medium | 2 | 2026-02-20 | Comfortable | 7 分钟 BFS 模板一次写完，可考虑再练 DFS 版本。 |
 | 104 | Maximum Depth of Binary Tree | tree | Easy | 1 | 2026-01-04 | Comfortable | 经典递归。 |
 | 121 | Best Time to Buy and Sell Stock | two pointers | Easy | 1 | 2026-02-01 | Comfortable | 维护最低买价与后续卖价。 |
 | 125 | Valid Palindrome | two pointers, string | Easy | 1 | 2026-02-01 | Comfortable | 字母数字都要考虑。 |
@@ -58,7 +58,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 226 | Invert Binary Tree | tree | Easy | 1 | 2026-01-04 | Comfortable | 递归交换左右子树。 |
 | 230 | Kth Smallest Element in a BST | inorder traversal, tree | Medium | 1 | 2026-01-05 | Warming Up | 迭代中序遍历。 |
 | 235 | Lowest Common Ancestor of a BST | BST | Easy | 1 | 2026-01-05 | Comfortable | 利用BST大小关系定位。 |
-| 238 | Product of Array Except Self | prefix product, array | Medium | 1 | 2025-12-28 | Warming Up | 左前缀乘*右前缀乘。 |
+| 238 | Product of Array Except Self | prefix product, array | Medium | 2 | 2026-02-20 | Comfortable | 两遍前缀乘法模板熟练，能在 6 分钟内完成。 |
 | 242 | Valid Anagram | hash map, string | Easy | 1 | 2025-12-27 | Comfortable | 统计字符频率。 |
 | 283 | Move Zeroes | two pointers, array | Easy | 2 | 2026-02-19 | Warming Up | 2分半完成，使用写指针先收集非零再统一补零，逻辑清晰。 |
 | 300 | Longest Increasing Subsequence | dynamic programming | Medium | 2 | 2026-02-17 | Warming Up | 9 min，依赖记忆的 patience / lower_bound 模板完成；需要再理解为何 dp 保存的是“长度k的最小尾值”。 |
@@ -71,6 +71,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 560 | Subarray Sum Equals K | prefix sum | Medium | 2 | 2026-02-18 | Learning | sum[j]-sum[i]=k，配合哈希表计数；查 count(prefix-k) 后再更新当前前缀，之后 2 天内再复习一次。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
+| 875 | Koko Eating Bananas | binary search | Medium | 1 | 2026-02-20 | Learning | 初次做答案空间二分，14 分钟 2 次提交；上下界设定要谨慎。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
 | 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
 | 2402 | Meeting Rooms III | priority queue, greedy | Hard | 1 | 2025-12-27 | Warming Up | 两个最小堆跟踪空房与占用房。 |
