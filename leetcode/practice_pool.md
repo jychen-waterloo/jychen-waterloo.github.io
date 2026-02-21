@@ -20,7 +20,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 20 | Valid Parentheses | string, stack | Easy | 1 | 2026-01-03 | Comfortable | 经典栈匹配题。 |
 | 21 | Merge Two Sorted Lists | two pointers, array | Easy | 1 | 2025-12-30 | Comfortable | 哨兵节点合并并释放。 |
 | 23 | Merge k Sorted Lists | priority queue, array, linked list | Hard | 1 | 2026-01-10 | Warming Up | 用k大小最小堆维护头节点，O(k)空间。 |
-| 33 | Search in Rotated Sorted Array | binary search | Medium | 2 | 2026-02-20 | Learning | 先卡在条件分支，今天复习模板后独立 AC，但提交仍多次；需要多刷强化判断顺序。 |
+| 33 | Search in Rotated Sorted Array | binary search | Medium | 3 | 2026-02-21 | Learning | 6 分钟复习，重点记录 `>=` 判断的理由；再刷几次把有序半区判断写成肌肉记忆。 |
 | 46 | Permutations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯，需要熟练。 |
 | 48 | Rotate Image | array | Medium | 2 | 2026-02-19 | Warming Up | 本轮11分钟无提示完成，按分层四元旋转；可再熟练直接转置+反转写法。 |
 | 49 | Group Anagrams | hash map, string | Medium | 1 | 2025-12-29 | Warming Up | 按排序串或字符频率作为hash键。 |
@@ -30,7 +30,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 56 | Merge Intervals | array | Medium | 1 | 2026-01-18 | Comfortable | 排序后顺序合并。 |
 | 70 | Climbing Stairs | dynamic programming | Easy | 1 | 2026-01-17 | Comfortable | 等价斐波那契。 |
 | 73 | Set Matrix Zeroes | array | Medium | 1 | 2026-02-08 | Warming Up | 用首行首列做零标记实现O(1)空间。 |
-| 76 | Minimum Window Substring | two pointers | Hard | 3 | 2026-02-18 | Learning | count可为负，允许缺口累积；今天花5 min无提示，重点再练左指针收缩触发条件。 |
+| 76 | Minimum Window Substring | two pointers | Hard | 4 | 2026-02-21 | Warming Up | count 可为负、missing==0 才收缩这套逻辑已稳定；继续保持每次 shrink 前先更新答案。 |
 | 77 | Combinations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯。 |
 | 78 | Subsets | bitmap, backtracking | Medium | 1 | 2026-01-06 | Comfortable | 可用回溯或位掩码。 |
 | 88 | Merge Sorted Array | two pointers | Easy | 1 | 2025-12-27 | Warming Up | 双指针从后往前可避免额外空间。 |
@@ -52,7 +52,8 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 200 | Number of Islands | DFS | Medium | 1 | 2026-01-11 | Comfortable | DFS染色统计岛屿。 |
 | 206 | Reverse Linked List | linked list | Easy | 1 | 2025-12-30 | Comfortable | 迭代反转指针。 |
 | 207 | Course Schedule | BFS, DFS | Medium | 1 | 2026-01-17 | Warming Up | Kahn算法：入度数组+队列。 |
-| 209 | Minimum Size Subarray Sum | two pointers, array, sliding window | Medium | 2 | 2026-02-19 | Learning | 今日 8 分钟完成但 while 收缩时遗漏一次更新，需牢记“更新→减左指针”顺序；可再刷巩固。 |
+| 209 | Minimum Size Subarray Sum | two pointers, array, sliding window | Medium | 3 | 2026-02-21 | Learning | 6 min 完成但一度写成 `sum==target`；笔记中强调用独立 sum 并在 `sum>=target` 时收缩。 |
+| 213 | House Robber II | dynamic programming | Medium | 1 | 2026-02-21 | Learning | 环形版本拆成 `rob(0..n-2)` 与 `rob(1..n-1)` 两段线性，18 分钟一次 AC。 |
 | 215 | Kth Largest Element in an Array | QuickSelect, priority queue, divide & conquer, array | Medium | 1 | 2026-01-10 | Warming Up | 最小堆或QuickSelect。 |
 | 217 | Contains Duplicate | hash map, array | Easy | 1 | 2025-12-27 | Comfortable | 用unordered_set检测重复。 |
 | 226 | Invert Binary Tree | tree | Easy | 1 | 2026-01-04 | Comfortable | 递归交换左右子树。 |
@@ -68,10 +69,10 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
-| 560 | Subarray Sum Equals K | prefix sum | Medium | 2 | 2026-02-18 | Learning | sum[j]-sum[i]=k，配合哈希表计数；查 count(prefix-k) 后再更新当前前缀，之后 2 天内再复习一次。 |
+| 560 | Subarray Sum Equals K | prefix sum | Medium | 3 | 2026-02-21 | Learning | 5 min 一次过，顺序牢记“查 prefix-k → 累加结果 → map[prefix]++”；注意结果可能要用 long long。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
-| 875 | Koko Eating Bananas | binary search | Medium | 1 | 2026-02-20 | Learning | 初次做答案空间二分，14 分钟 2 次提交；上下界设定要谨慎。 |
+| 875 | Koko Eating Bananas | binary search | Medium | 2 | 2026-02-21 | Learning | 记录了 `[lo, hi)` 模板与 `hi=mid` 的理由；之后再刷一遍巩固上界语义。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
 | 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
 | 2402 | Meeting Rooms III | priority queue, greedy | Hard | 1 | 2025-12-27 | Warming Up | 两个最小堆跟踪空房与占用房。 |
