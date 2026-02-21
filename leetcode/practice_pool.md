@@ -64,7 +64,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 300 | Longest Increasing Subsequence | dynamic programming | Medium | 2 | 2026-02-17 | Warming Up | 9 min，依赖记忆的 patience / lower_bound 模板完成；需要再理解为何 dp 保存的是“长度k的最小尾值”。 |
 | 322 | Coin Change | dynamic programming | Medium | 1 | 2026-01-18 | Warming Up | 经典dp：dp[amount]。 |
 | 347 | Top K Frequent Elements | priority queue, hash map, array | Medium | 1 | 2026-01-10 | Warming Up | 频率统计+最小堆或桶排序。 |
-| 416 | Partition Equal Subset Sum | dynamic programming | Medium | 1 | 2026-02-18 | Learning | 首次做依赖提示才想到0/1背包，需要多做几次熟悉倒序更新的理由。 |
+| 416 | Partition Equal Subset Sum | dynamic programming | Medium | 2 | 2026-02-21 | Learning | 今天 7 分钟凭记忆完成 0/1 背包模板，但倒序更新 / dp[j] 含义仍需巩固。 |
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
