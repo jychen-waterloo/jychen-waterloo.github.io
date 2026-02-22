@@ -21,6 +21,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 21 | Merge Two Sorted Lists | two pointers, array | Easy | 1 | 2025-12-30 | Comfortable | 哨兵节点合并并释放。 |
 | 23 | Merge k Sorted Lists | priority queue, array, linked list | Hard | 1 | 2026-01-10 | Warming Up | 用k大小最小堆维护头节点，O(k)空间。 |
 | 33 | Search in Rotated Sorted Array | binary search | Medium | 3 | 2026-02-21 | Learning | 6 分钟复习，重点记录 `>=` 判断的理由；再刷几次把有序半区判断写成肌肉记忆。 |
+| 34 | Find First and Last Position of Element in Sorted Array | binary search | Medium | 2 | 2026-02-22 | Learning | 今日 23 分钟、4 次提交后 AC；边界易错，列为重点复习题，固定使用 `[l,r)` + lower/upper 模板。 |
 | 46 | Permutations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯，需要熟练。 |
 | 48 | Rotate Image | array | Medium | 2 | 2026-02-19 | Warming Up | 本轮11分钟无提示完成，按分层四元旋转；可再熟练直接转置+反转写法。 |
 | 49 | Group Anagrams | hash map, string | Medium | 1 | 2025-12-29 | Warming Up | 按排序串或字符频率作为hash键。 |
