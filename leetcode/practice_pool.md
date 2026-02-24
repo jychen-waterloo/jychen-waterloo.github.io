@@ -34,6 +34,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 76 | Minimum Window Substring | two pointers | Hard | 4 | 2026-02-21 | Warming Up | count 可为负、missing==0 才收缩这套逻辑已稳定；继续保持每次 shrink 前先更新答案。 |
 | 77 | Combinations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯。 |
 | 78 | Subsets | bitmap, backtracking | Medium | 1 | 2026-01-06 | Comfortable | 可用回溯或位掩码。 |
+| 81 | Search in Rotated Sorted Array II | binary search | Medium | 1 | 2026-02-24 | Learning | 12 分钟、2 次提交 AC；关键是 `left==mid==right` 时先去重（`left++/right--`）再判有序半区。 |
 | 88 | Merge Sorted Array | two pointers | Easy | 1 | 2025-12-27 | Warming Up | 双指针从后往前可避免额外空间。 |
 | 98 | Validate Binary Search Tree | tree, DFS | Medium | 1 | 2026-01-05 | Comfortable | 注意上下界和溢出。 |
 | 100 | Same Tree | BFS, tree | Easy | 1 | 2026-01-04 | Comfortable | DFS递归比较左右子树。 |
@@ -70,6 +71,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
+| 494 | Target Sum | dynamic programming, 0-1-knapsack | Medium | 1 | 2026-02-24 | Learning | 16 分钟、2 次提交 AC；已掌握转化为 `(sum+target)/2` 子集计数，需牢记先判 `sum+target>=0` 且为偶数。 |
 | 560 | Subarray Sum Equals K | prefix sum | Medium | 3 | 2026-02-21 | Learning | 5 min 一次过，顺序牢记“查 prefix-k → 累加结果 → map[prefix]++”；注意结果可能要用 long long。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
