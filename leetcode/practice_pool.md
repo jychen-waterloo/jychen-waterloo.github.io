@@ -2,6 +2,8 @@
 
 Use this list to track Jiayi's must-practice problems. Update the table whenever a problem is attempted so we can see repetition counts, last touch dates, and current mastery confidence levels.
 
+> Date convention: study-day interpretation follows **America/Toronto**. Raw system timestamps may be UTC, but daily progress reviews should use Toronto local date.
+
 ## Mastery Scale
 - **Learning** – still figuring out the core idea or pattern.
 - **Warming Up** – can solve with light hints or after a reminder.
