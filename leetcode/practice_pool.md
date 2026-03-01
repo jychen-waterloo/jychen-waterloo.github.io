@@ -36,7 +36,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 76 | Minimum Window Substring | two pointers | Hard | 4 | 2026-02-21 | Warming Up | count 可为负、missing==0 才收缩这套逻辑已稳定；继续保持每次 shrink 前先更新答案。 |
 | 77 | Combinations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯。 |
 | 78 | Subsets | bitmap, backtracking | Medium | 1 | 2026-01-06 | Comfortable | 可用回溯或位掩码。 |
-| 81 | Search in Rotated Sorted Array II | binary search | Medium | 2 | 2026-02-25 | Learning | 12 分钟、2 次提交 AC；关键是 `left==mid==right` 时先去重（`left++/right--`）再判有序半区；本轮 5 分钟，1 次提交 AC。 |
+| 81 | Search in Rotated Sorted Array II | binary search | Medium | 3 | 2026-03-01 | Learning | 12 分钟、2 次提交 AC；关键是 `left==mid==right` 时先去重（`left++/right--`）再判有序半区；二刷 5 分钟 1 次 AC；本轮 4 分钟，2 次 AC。 |
 | 88 | Merge Sorted Array | two pointers | Easy | 1 | 2025-12-27 | Warming Up | 双指针从后往前可避免额外空间。 |
 | 98 | Validate Binary Search Tree | tree, DFS | Medium | 1 | 2026-01-05 | Comfortable | 注意上下界和溢出。 |
 | 100 | Same Tree | BFS, tree | Easy | 1 | 2026-01-04 | Comfortable | DFS递归比较左右子树。 |
@@ -57,6 +57,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 206 | Reverse Linked List | linked list | Easy | 1 | 2025-12-30 | Comfortable | 迭代反转指针。 |
 | 207 | Course Schedule | BFS, DFS | Medium | 1 | 2026-01-17 | Warming Up | Kahn算法：入度数组+队列。 |
 | 209 | Minimum Size Subarray Sum | two pointers, array, sliding window | Medium | 3 | 2026-02-21 | Learning | 6 min 完成但一度写成 `sum==target`；笔记中强调用独立 sum 并在 `sum>=target` 时收缩。 |
+| 210 | Course Schedule II | graph, topological-sort, bfs | Medium | 1 | 2026-03-01 | Learning | 7 分钟，1 次 AC；沿用 Kahn 拓扑排序输出顺序，最终通过 `order.size()==numCourses` 校验有无环。 |
 | 213 | House Robber II | dynamic programming | Medium | 1 | 2026-02-21 | Learning | 环形版本拆成 `rob(0..n-2)` 与 `rob(1..n-1)` 两段线性，18 分钟一次 AC。 |
 | 215 | Kth Largest Element in an Array | QuickSelect, priority queue, divide & conquer, array | Medium | 1 | 2026-01-10 | Warming Up | 最小堆或QuickSelect。 |
 | 217 | Contains Duplicate | hash map, array | Easy | 1 | 2025-12-27 | Comfortable | 用unordered_set检测重复。 |
@@ -73,11 +74,11 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
-| 494 | Target Sum | dynamic programming, 0-1-knapsack | Medium | 2 | 2026-02-25 | Learning | 16 分钟、2 次提交 AC；已掌握转化为 `(sum+target)/2` 子集计数，需牢记先判 `sum+target>=0` 且为偶数；本轮 7 分钟，2 次提交 AC。 |
+| 494 | Target Sum | dynamic programming, 0-1-knapsack | Medium | 3 | 2026-03-01 | Learning | 16 分钟、2 次提交 AC；已掌握转化为 `(sum+target)/2` 子集计数，需牢记先判 `sum+target>=0` 且为偶数；二刷 7 分钟 2 次 AC；本轮 8 分钟，1 次 AC。 |
 | 560 | Subarray Sum Equals K | prefix sum | Medium | 4 | 2026-02-25 | Learning | 5 min 一次过，顺序牢记“查 prefix-k → 累加结果 → map[prefix]++”；注意结果可能要用 long long；本轮 12 分钟，1 次提交 AC。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
-| 875 | Koko Eating Bananas | binary search | Medium | 2 | 2026-02-21 | Learning | 记录了 `[lo, hi)` 模板与 `hi=mid` 的理由；之后再刷一遍巩固上界语义。 |
+| 875 | Koko Eating Bananas | binary search | Medium | 3 | 2026-03-01 | Learning | 记录了 `[lo, hi)` 模板与 `hi=mid` 的理由；二刷 6 分钟 1 次 AC；本轮 4 分钟，1 次 AC。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
 | 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
 | 2402 | Meeting Rooms III | priority queue, greedy | Hard | 1 | 2025-12-27 | Warming Up | 两个最小堆跟踪空房与占用房。 |
