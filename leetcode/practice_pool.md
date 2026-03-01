@@ -23,7 +23,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 21 | Merge Two Sorted Lists | two pointers, array | Easy | 1 | 2025-12-30 | Comfortable | 哨兵节点合并并释放。 |
 | 23 | Merge k Sorted Lists | priority queue, array, linked list | Hard | 1 | 2026-01-10 | Warming Up | 用k大小最小堆维护头节点，O(k)空间。 |
 | 33 | Search in Rotated Sorted Array | binary search | Medium | 3 | 2026-02-21 | Learning | 6 分钟复习，重点记录 `>=` 判断的理由；再刷几次把有序半区判断写成肌肉记忆。 |
-| 34 | Find First and Last Position of Element in Sorted Array | binary search | Medium | 3 | 2026-02-25 | Learning | 今日 23 分钟、4 次提交后 AC；边界易错，列为重点复习题，固定使用 `[l,r)` + lower/upper 模板；本轮 11 分钟，2 次提交 AC。 |
+| 34 | Find First and Last Position of Element in Sorted Array | binary search | Medium | 4 | 2026-03-01 | Learning | 23 分钟、4 次提交后 AC；边界易错，固定 `[l,r)` + lower/upper 模板；二刷 11 分钟 2 次 AC；本轮 9 分钟，1 次 AC（中途纠正左右收缩方向并补了存在性校验）。 |
 | 46 | Permutations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯，需要熟练。 |
 | 48 | Rotate Image | array | Medium | 2 | 2026-02-19 | Warming Up | 本轮11分钟无提示完成，按分层四元旋转；可再熟练直接转置+反转写法。 |
 | 49 | Group Anagrams | hash map, string | Medium | 1 | 2025-12-29 | Warming Up | 按排序串或字符频率作为hash键。 |
@@ -55,7 +55,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 198 | House Robber | dynamic programming | Medium | 2 | 2026-02-19 | Warming Up | 5分钟完成，滚动 rob/skip 状态写法熟练，可再练变体 House Robber II。 |
 | 200 | Number of Islands | DFS | Medium | 1 | 2026-01-11 | Comfortable | DFS染色统计岛屿。 |
 | 206 | Reverse Linked List | linked list | Easy | 1 | 2025-12-30 | Comfortable | 迭代反转指针。 |
-| 207 | Course Schedule | BFS, DFS | Medium | 1 | 2026-01-17 | Warming Up | Kahn算法：入度数组+队列。 |
+| 207 | Course Schedule | BFS, DFS | Medium | 2 | 2026-03-01 | Comfortable | Kahn 拓扑（入度+队列）判环已稳定；本轮 5 分钟，1 次 AC。 |
 | 209 | Minimum Size Subarray Sum | two pointers, array, sliding window | Medium | 3 | 2026-02-21 | Learning | 6 min 完成但一度写成 `sum==target`；笔记中强调用独立 sum 并在 `sum>=target` 时收缩。 |
 | 210 | Course Schedule II | graph, topological-sort, bfs | Medium | 1 | 2026-03-01 | Learning | 7 分钟，1 次 AC；沿用 Kahn 拓扑排序输出顺序，最终通过 `order.size()==numCourses` 校验有无环。 |
 | 213 | House Robber II | dynamic programming | Medium | 1 | 2026-02-21 | Learning | 环形版本拆成 `rob(0..n-2)` 与 `rob(1..n-1)` 两段线性，18 分钟一次 AC。 |
@@ -67,10 +67,10 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 238 | Product of Array Except Self | prefix product, array | Medium | 2 | 2026-02-20 | Comfortable | 两遍前缀乘法模板熟练，能在 6 分钟内完成。 |
 | 242 | Valid Anagram | hash map, string | Easy | 1 | 2025-12-27 | Comfortable | 统计字符频率。 |
 | 283 | Move Zeroes | two pointers, array | Easy | 2 | 2026-02-19 | Warming Up | 2分半完成，使用写指针先收集非零再统一补零，逻辑清晰。 |
-| 300 | Longest Increasing Subsequence | dynamic programming | Medium | 2 | 2026-02-17 | Warming Up | 9 min，依赖记忆的 patience / lower_bound 模板完成；需要再理解为何 dp 保存的是“长度k的最小尾值”。 |
+| 300 | Longest Increasing Subsequence | dynamic programming | Medium | 3 | 2026-03-01 | Warming Up | patience + lower_bound 模板稳定；本轮 8 分钟，1 次 AC；注意实现时先处理空数组。 |
 | 322 | Coin Change | dynamic programming | Medium | 1 | 2026-01-18 | Warming Up | 经典dp：dp[amount]。 |
 | 347 | Top K Frequent Elements | priority queue, hash map, array | Medium | 1 | 2026-01-10 | Warming Up | 频率统计+最小堆或桶排序。 |
-| 416 | Partition Equal Subset Sum | dynamic programming | Medium | 2 | 2026-02-21 | Learning | 今天 7 分钟凭记忆完成 0/1 背包模板，但倒序更新 / dp[j] 含义仍需巩固。 |
+| 416 | Partition Equal Subset Sum | dynamic programming | Medium | 3 | 2026-03-01 | Learning | 已形成 0/1 背包模板：`target=sum/2` + 倒序更新；本轮 3 分钟，1 次 AC。 |
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
