@@ -23,7 +23,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 21 | Merge Two Sorted Lists | two pointers, array | Easy | 1 | 2025-12-30 | Comfortable | 哨兵节点合并并释放。 |
 | 23 | Merge k Sorted Lists | priority queue, array, linked list | Hard | 1 | 2026-01-10 | Warming Up | 用k大小最小堆维护头节点，O(k)空间。 |
 | 33 | Search in Rotated Sorted Array | binary search | Medium | 3 | 2026-02-21 | Learning | 6 分钟复习，重点记录 `>=` 判断的理由；再刷几次把有序半区判断写成肌肉记忆。 |
-| 34 | Find First and Last Position of Element in Sorted Array | binary search | Medium | 4 | 2026-03-01 | Learning | 23 分钟、4 次提交后 AC；边界易错，固定 `[l,r)` + lower/upper 模板；二刷 11 分钟 2 次 AC；本轮 9 分钟，1 次 AC（中途纠正左右收缩方向并补了存在性校验）。 |
+| 34 | Find First and Last Position of Element in Sorted Array | binary search | Medium | 5 | 2026-03-02 | Learning | 23 分钟、4 次提交后 AC；边界易错，固定 `[l,r)` + lower/upper 模板；二刷 11 分钟 2 次 AC；上一轮 9 分钟 1 次 AC（纠正左右收缩方向+存在性校验）；本轮 7 分钟 1 次 AC，边界模板更稳定。 |
 | 46 | Permutations | backtracking | Medium | 1 | 2026-01-06 | Warming Up | 标准回溯，需要熟练。 |
 | 48 | Rotate Image | array | Medium | 2 | 2026-02-19 | Warming Up | 本轮11分钟无提示完成，按分层四元旋转；可再熟练直接转置+反转写法。 |
 | 49 | Group Anagrams | hash map, string | Medium | 1 | 2025-12-29 | Warming Up | 按排序串或字符频率作为hash键。 |
@@ -74,7 +74,7 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 417 | Pacific Atlantic Water Flow | DFS | Medium | 1 | 2026-01-11 | Warming Up | 从两侧分别DFS取交集。 |
 | 424 | Longest Repeating Character Replacement | two pointers, array, sliding window | Medium | 1 | 2026-02-10 | Warming Up | maxFreq只需记录最大值。 |
 | 438 | Find All Anagrams in a String | two pointers, string, sliding window | Medium | 2 | 2026-02-16 | Comfortable | 4 min 无提示二刷成功；固定窗口+missing 模板已经稳定。 |
-| 494 | Target Sum | dynamic programming, 0-1-knapsack | Medium | 3 | 2026-03-01 | Learning | 16 分钟、2 次提交 AC；已掌握转化为 `(sum+target)/2` 子集计数，需牢记先判 `sum+target>=0` 且为偶数；二刷 7 分钟 2 次 AC；本轮 8 分钟，1 次 AC。 |
+| 494 | Target Sum | dynamic programming, 0-1-knapsack | Medium | 4 | 2026-03-02 | Learning | 16 分钟、2 次提交 AC；已掌握转化为 `(sum+target)/2` 子集计数，需牢记先判 `sum+target>=0` 且为偶数；二刷 7 分钟 2 次 AC；上一轮 8 分钟 1 次 AC；本轮 4.5 分钟 2 次 AC，顽固错点仍是漏判 `sum+target<0`。 |
 | 560 | Subarray Sum Equals K | prefix sum | Medium | 4 | 2026-02-25 | Learning | 5 min 一次过，顺序牢记“查 prefix-k → 累加结果 → map[prefix]++”；注意结果可能要用 long long；本轮 12 分钟，1 次提交 AC。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
