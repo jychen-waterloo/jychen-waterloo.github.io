@@ -80,7 +80,9 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
 | 875 | Koko Eating Bananas | binary search | Medium | 3 | 2026-03-01 | Learning | 记录了 `[lo, hi)` 模板与 `hi=mid` 的理由；二刷 6 分钟 1 次 AC；本轮 4 分钟，1 次 AC。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
+| 1283 | Find the Smallest Divisor Given a Threshold | binary search, answer-space | Medium | 1 | 2026-03-04 | Learning | 9 分钟，2 次提交 AC；最小可行值二分模板正确，边界移动手感仍需巩固。 |
 | 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
+| 1539 | Kth Missing Positive Number | binary search, array | Easy | 1 | 2026-03-04 | Warming Up | 6 分钟，2 次提交 AC；本轮用线性模拟完成，已理解二分法 `missing(i)=arr[i]-(i+1)` 的定位思路。 |
 | 2402 | Meeting Rooms III | priority queue, greedy | Hard | 1 | 2025-12-27 | Warming Up | 两个最小堆跟踪空房与占用房。 |
 
 ## Next Additions
