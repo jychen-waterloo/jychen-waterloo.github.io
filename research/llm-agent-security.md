@@ -5,8 +5,8 @@
 - Provide Jiayi with a digest every 2-3 days summarizing noteworthy findings, trends, and actionable takeaways.
 
 ## Tracking
-- **Last digest sent:** 2026-03-03
-- **Next digest due:** 2026-03-04 (target)
+- **Last digest sent:** 2026-03-04
+- **Next digest due:** 2026-03-05 (target)
 
 ## Candidate Sources
 - arXiv (cs.CR, cs.AI, stat.ML)
