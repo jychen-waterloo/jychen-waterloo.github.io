@@ -52,13 +52,13 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 160 | Intersection of Two Linked Lists | two pointers, linked list | Easy | 1 | 2026-01-02 | Comfortable | 双指针遍历两次相遇。 |
 | 169 | Majority Element | array | Easy | 1 | 2026-02-01 | Comfortable | Boyer-Moore投票法。 |
 | 189 | Rotate Array | two pointers, array | Medium | 1 | 2026-02-02 | Learning | 反转三次即可原地旋转。 |
-| 198 | House Robber | dynamic programming | Medium | 2 | 2026-02-19 | Warming Up | 5分钟完成，滚动 rob/skip 状态写法熟练，可再练变体 House Robber II。 |
+| 198 | House Robber | dynamic programming | Medium | 3 | 2026-03-05 | Comfortable | 2 分钟 1 次 AC，`rob/skip` 滚动状态已非常熟练；工程写法可补 `nums.empty()` 防御。 |
 | 200 | Number of Islands | DFS | Medium | 1 | 2026-01-11 | Comfortable | DFS染色统计岛屿。 |
 | 206 | Reverse Linked List | linked list | Easy | 1 | 2025-12-30 | Comfortable | 迭代反转指针。 |
 | 207 | Course Schedule | BFS, DFS | Medium | 2 | 2026-03-01 | Comfortable | Kahn 拓扑（入度+队列）判环已稳定；本轮 5 分钟，1 次 AC。 |
 | 209 | Minimum Size Subarray Sum | two pointers, array, sliding window | Medium | 3 | 2026-02-21 | Learning | 6 min 完成但一度写成 `sum==target`；笔记中强调用独立 sum 并在 `sum>=target` 时收缩。 |
 | 210 | Course Schedule II | graph, topological-sort, bfs | Medium | 1 | 2026-03-01 | Learning | 7 分钟，1 次 AC；沿用 Kahn 拓扑排序输出顺序，最终通过 `order.size()==numCourses` 校验有无环。 |
-| 213 | House Robber II | dynamic programming | Medium | 1 | 2026-02-21 | Learning | 环形版本拆成 `rob(0..n-2)` 与 `rob(1..n-1)` 两段线性，18 分钟一次 AC。 |
+| 213 | House Robber II | dynamic programming | Medium | 2 | 2026-03-05 | Comfortable | 本轮 3 分钟 1 次 AC；环形拆两段线性 DP（`[0,n-2]` 与 `[1,n-1]`）已能稳定秒写。 |
 | 215 | Kth Largest Element in an Array | QuickSelect, priority queue, divide & conquer, array | Medium | 1 | 2026-01-10 | Warming Up | 最小堆或QuickSelect。 |
 | 217 | Contains Duplicate | hash map, array | Easy | 1 | 2025-12-27 | Comfortable | 用unordered_set检测重复。 |
 | 226 | Invert Binary Tree | tree | Easy | 1 | 2026-01-04 | Comfortable | 递归交换左右子树。 |
@@ -77,9 +77,11 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 494 | Target Sum | dynamic programming, 0-1-knapsack | Medium | 4 | 2026-03-02 | Learning | 16 分钟、2 次提交 AC；已掌握转化为 `(sum+target)/2` 子集计数，需牢记先判 `sum+target>=0` 且为偶数；二刷 7 分钟 2 次 AC；上一轮 8 分钟 1 次 AC；本轮 4.5 分钟 2 次 AC，顽固错点仍是漏判 `sum+target<0`。 |
 | 560 | Subarray Sum Equals K | prefix sum | Medium | 4 | 2026-02-25 | Learning | 5 min 一次过，顺序牢记“查 prefix-k → 累加结果 → map[prefix]++”；注意结果可能要用 long long；本轮 12 分钟，1 次提交 AC。 |
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
+| 704 | Binary Search | binary search | Easy | 1 | 2026-03-05 | Comfortable | 2 分钟完成，闭区间模板已稳；本轮因 `=` 边界细节二提后 AC。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
 | 875 | Koko Eating Bananas | binary search | Medium | 3 | 2026-03-01 | Learning | 记录了 `[lo, hi)` 模板与 `hi=mid` 的理由；二刷 6 分钟 1 次 AC；本轮 4 分钟，1 次 AC。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
+| 1011 | Capacity To Ship Packages Within D Days | binary search, answer-space, greedy | Medium | 1 | 2026-03-05 | Comfortable | 9 分钟 1 次 AC；最小可行值二分 + 贪心计天数写法流畅。 |
 | 1283 | Find the Smallest Divisor Given a Threshold | binary search, answer-space | Medium | 1 | 2026-03-04 | Learning | 9 分钟，2 次提交 AC；最小可行值二分模板正确，边界移动手感仍需巩固。 |
 | 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
 | 1539 | Kth Missing Positive Number | binary search, array | Easy | 1 | 2026-03-04 | Warming Up | 6 分钟，2 次提交 AC；本轮用线性模拟完成，已理解二分法 `missing(i)=arr[i]-(i+1)` 的定位思路。 |
