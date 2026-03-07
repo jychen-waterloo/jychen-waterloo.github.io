@@ -79,13 +79,15 @@ Use this list to track Jiayi's must-practice problems. Update the table whenever
 | 567 | Permutation in String | two pointers, hash map, sliding window | Medium | 1 | 2025-12-29 | Warming Up | int[26]统计频率，滑动窗口检查。 |
 | 704 | Binary Search | binary search | Easy | 1 | 2026-03-05 | Comfortable | 2 分钟完成，闭区间模板已稳；本轮因 `=` 边界细节二提后 AC。 |
 | 739 | Daily Temperatures | monotonic stack, stack | Medium | 1 | 2026-01-03 | Warming Up | 逆向更高效，遇升温出栈。 |
-| 875 | Koko Eating Bananas | binary search | Medium | 3 | 2026-03-01 | Learning | 记录了 `[lo, hi)` 模板与 `hi=mid` 的理由；二刷 6 分钟 1 次 AC；本轮 4 分钟，1 次 AC。 |
+| 875 | Koko Eating Bananas | binary search | Medium | 4 | 2026-03-07 | Mastered | 今日 3 分钟 1 次 AC，最小可行值二分（`t>h => lo=mid+1`，否则 `hi=mid`）已形成稳定肌肉记忆，可标记熟练。 |
 | 840 | Magic Squares In Grid | sliding window | Medium | 1 | 2025-12-29 | Comfortable | 中心必须是5，行列和为15且无重复。 |
 | 1011 | Capacity To Ship Packages Within D Days | binary search, answer-space, greedy | Medium | 1 | 2026-03-05 | Comfortable | 9 分钟 1 次 AC；最小可行值二分 + 贪心计天数写法流畅。 |
-| 1283 | Find the Smallest Divisor Given a Threshold | binary search, answer-space | Medium | 1 | 2026-03-04 | Learning | 9 分钟，2 次提交 AC；最小可行值二分模板正确，边界移动手感仍需巩固。 |
+| 1283 | Find the Smallest Divisor Given a Threshold | binary search, answer-space | Medium | 2 | 2026-03-07 | Comfortable | 今日 4 分钟，2 次提交 AC（1 次 typo）；与 Koko 同构，最小可行值二分模板已明显稳定。 |
 | 1351 | Count Negative Numbers in a Sorted Matrix | two pointers | Easy | 1 | 2025-12-28 | Comfortable | 从左下走向右上，根据符号移动。 |
 | 1539 | Kth Missing Positive Number | binary search, array | Easy | 1 | 2026-03-04 | Warming Up | 6 分钟，2 次提交 AC；本轮用线性模拟完成，已理解二分法 `missing(i)=arr[i]-(i+1)` 的定位思路。 |
 | 2402 | Meeting Rooms III | priority queue, greedy | Hard | 1 | 2025-12-27 | Warming Up | 两个最小堆跟踪空房与占用房。 |
+| 410 | Split Array Largest Sum | binary search, answer-space, greedy | Hard | 1 | 2026-03-07 | Learning | 12 分钟 1 次 AC；在提示下完成，已写出 `can(x)` 判定（超上限即开新段）并用 lower-bound 二分最小可行最大段和。 |
+| 2560 | House Robber IV | binary search, greedy | Medium | 1 | 2026-03-07 | Learning | 12 分钟 1 次 AC；关键在 `check(c)`：只在 `nums[i] <= c` 时贪心选取并跳过相邻房，判断可偷数量是否达到 k。 |
 
 ## Next Additions
 - Mirror any new Notion entries here as soon as they are marked「重点学习」or「初次学习」so the schedule stays synced.
