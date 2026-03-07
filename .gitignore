@@ -1,2 +1,5 @@
 # Generated SQLite database
 leetcode/tracker.db
+
+# Local publish timestamp cache
+.last_publish_push_ts
